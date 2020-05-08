@@ -34,6 +34,7 @@ app.get('/', (req, res) => {
 app.post('/api/registerinfo', function(req, res){
     console.log('API CALL: register');
     console.log(req.body);
+    console.log(req);
     var nombre = (req.body.nombre == null ? 'NA' : req.body.nombre) ;
     var apellido = (req.body.apellido  == null ? 'NA' : req.body.apellido ); 
     var telefonofijo = (req.body.telefonofijo == null ? 'NA' : req.body.telefonofijo) ;
